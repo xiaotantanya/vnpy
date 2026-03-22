@@ -7,3 +7,4 @@
    windows_install.md
    ubuntu_install.md
    mac_install.md
+   github_deployment.md
