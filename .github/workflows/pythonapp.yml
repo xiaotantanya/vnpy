@@ -31,3 +31,11 @@ jobs:
       run: |
         # Build source distribution and wheel distribution
         uv build
+    - name: Display build artifacts
+      run: |
+        # Show what was produced by the build (runs on windows-latest)
+        echo "=== Build artifacts in dist/ ==="
+        dir dist\
+        echo ""
+        echo "=== Wheel contents ==="
+        python scripts/show_wheel_contents.py
